@@ -1,0 +1,14 @@
+body {
+    /* Gjør linjestørelsen mellom tekst til 35 piksler */
+    line-height: 35px;
+}
+h1 {
+    /* Endrer på fontens stil */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* Gjør fonten større */
+    font-size: 300%;
+}
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 150%;
+}

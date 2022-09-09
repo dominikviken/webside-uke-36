@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<!-- Importerer ekstern CSS ved navn av index.css -->
+<link rel="stylesheet" href="index.css">
+
+<!-- Setter tittel på nettsiden -->
+<title>kul nettside</title>
+</head>
+
+<body>
+<!-- Lager Knappene og når de blir trykket starter de funksjoner innenfor index.js. Funksjonen fjerner eller gir hidden attributen til iFramene. -->
+<div class="SideKnapper"> 
+    <button onclick="endreTilHjem()"><strong>Hjem</strong></button>
+    <button onclick="endreTilProsjekter()"><strong>Prosjekter</strong></button>
+    <button onclick="endreTilFotoside()"><strong>Bilder</strong></button>
+    <button onclick="endreTilOmMeg()"><strong>Om Meg</strong></button>
+    <button onclick="endreTilKontaktMeg()"><strong>Kontakt Meg</strong></button>
+</div>
+
+<!-- iFrames som viser de ulike sidene -->
+<div class="VisningAvSider">
+    <!-- Viser hjemmesiden først når man går inn på siden -->
+    <iframe id="HjemID" src="sider/hjem.html" width="100%" height="600" style="border:none;"></iframe>
+    <!-- Andre iFrames er gjemte ved bruk av hidden attribute -->
+    <iframe hidden id="ProsjektID" src="sider/prosjekter.html" width="100%" height="600" style="border:none;"></iframe>
+    <iframe hidden id="OmID" src="sider/om.html" width="100%" height="610" style="border:none;"></iframe>
+    <iframe hidden id="KontaktID" src="sider/kontakt.html" width="100%" height="625" style="border:none;"></iframe>
+    <iframe hidden id="FotosideID" src="sider/fotoside.html" width="100%" height="625" style="border:none;"></iframe>
+</div>
+</body>
+
+<!-- Importerer ekstern JS -->
+<script src="index.js"></script>
+</html>
